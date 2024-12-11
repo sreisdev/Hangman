@@ -49,7 +49,9 @@ void resettried(vector<char>& tried){
 
 
 int main()
-{   string filename = "wordlist.txt";
+{
+    cout << "PENIS";
+    string filename = "wordlist.txt";
     int maxAttempts=6, attempts;
     char in;
     vector<char> word;
