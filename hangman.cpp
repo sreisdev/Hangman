@@ -5,6 +5,10 @@
 
 
 using namespace std;
+//Gets a random word from the wordlist.txt file
+string getRandomword(){
+
+}
 
 
 
@@ -13,7 +17,11 @@ using namespace std;
 
 int main()
 {
-    std::cout<<"Hello World";
+    int maxAttempts, attempts;
+    vector<char> word;
+    vector<char> try;
+    vector<char> guessed;
+
 
     return 0;
 }
