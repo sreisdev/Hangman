@@ -50,7 +50,6 @@ void resettried(vector<char>& tried){
 
 int main()
 {
-    cout << "PENIS";
     string filename = "wordlist.txt";
     int maxAttempts=6, attempts;
     char in;
@@ -62,7 +61,7 @@ int main()
     
     while(runGame){
      word = getRandomword();
-     guessed.empty();
+     guessed.clear();
      resettried(tried);
      attempts=0;
         while(attempts<maxAttempts){
@@ -90,9 +89,11 @@ int main()
          
         if(youwin){
              //YOU WON!
+            cout << "You win!!";
          }
          else{
              //YOU LOST!
+            cout << "You lost!";
          }
       runGame= restartGame(getCharStartNewGame());
     }
