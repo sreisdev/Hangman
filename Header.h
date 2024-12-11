@@ -6,8 +6,6 @@
 
 using namespace std;
 
-//
-
 	//Gets a random word from the wordlist.txt file
 	vector<char> getRandomword();
 
@@ -32,6 +30,7 @@ using namespace std;
 	// Print question and get char for continue game y/n    
 	char getCharStartNewGame();
 
+	//make tried have same size as word and filled with '_'
 	void resettried(vector<char>& tried);
 
 #endif
