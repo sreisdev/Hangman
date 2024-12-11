@@ -5,9 +5,10 @@
 
 
 // make tried have same size as word and filled with '_'
-void resettried(vector<char>& tried){
-    for (char& c : tried) {
-        c = '_';
+void resettried(vector<char>& tried, int size){
+    tried.clear();
+    for (int index = 0; index < size; index++) {
+        tried.push_back('_');
     }
 }
 
@@ -16,6 +17,7 @@ char getCharStartNewGame() {
     char result;
     cout << "Willst Du ein neues Spiel starten? (Y/N): ";
     cin >> result;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
     return result;
 }
 
@@ -36,7 +38,7 @@ bool checkCompleted(vector<char> tried, vector<char> word) {
 bool checkedGuessed(char c, vector<char> guessed) {
     for (char guess : guessed) {
         if (c == guess) {
-            return true;
+            return true;               
         }
     }
     return false;
@@ -49,6 +51,7 @@ char inputCharacter() {
     do {
         cout << "Buchstaben eingeben: ";
         cin >> result;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         if (isalpha(result) == 0) {
             cout << "Bitte einen Buchstaben aus dem Alphabet eingeben.";
             inputIsCharacter = false;

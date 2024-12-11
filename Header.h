@@ -31,6 +31,6 @@ using namespace std;
 	char getCharStartNewGame();
 
 	//make tried have same size as word and filled with '_'
-	void resettried(vector<char>& tried);
+	void resettried(vector<char>& tried, int size);
 
 #endif

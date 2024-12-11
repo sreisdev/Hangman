@@ -37,8 +37,8 @@ bool guessChar(char c, vector<char>& tried, vector<char> word) {
         if (word[i] == c && tried[i] == '_') {
             tried[i] = c;
             found = true;
+            tried.at(i) = c;
         }
     }
-
     return found;
 }
