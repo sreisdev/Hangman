@@ -1,3 +1,9 @@
+#include <iostream>
+#include <vector>
+#include <sstream>
+#include <fstream>
+#include <cstdlib>
+#include "Header.h"
 //Gets a random word from the wordlist.txt file
 vector<char> getRandomword() {
     ifstream file("wordlist.txt");
@@ -22,4 +28,17 @@ vector<char> getRandomword() {
     string randomWord = words[rand() % words.size()];
 
     return vector<char>(randomWord.begin(), randomWord.end());
+}
+
+bool guessChar(char c, vector<char>& tried, vector<char> word) {
+    bool found = false;
+
+    for (size_t i = 0; i < word.size(); ++i) {
+        if (word[i] == c && tried[i] == '_') {
+            tried[i] = c;
+            found = true;
+        }
+    }
+
+    return found;
 }
