@@ -6,6 +6,8 @@
 
 using namespace std;
 
+//
+
 	//Gets a random word from the wordlist.txt file
 	vector<char> getRandomword();
 
