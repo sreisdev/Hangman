@@ -64,7 +64,7 @@ vector<vector<string>> hangman = {
 
 void printGame(vector<char> tried, int attempts, vector<char> guessed) {
 
-	system("csl");
+	system("cls");
 	cout << hangman[attempts][0] << endl;
 	cout << hangman[attempts][1] << endl;
 	cout << hangman[attempts][2] << endl;
@@ -76,4 +76,5 @@ void printGame(vector<char> tried, int attempts, vector<char> guessed) {
 	cout << endl;
 	cout << "Guessed: ";
 	for (char i : guessed) cout << " " << i;
+	cout << endl;
 }
