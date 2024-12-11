@@ -76,3 +76,4 @@ cmake-build-release/
 Thumbs.db
 desktop.ini
 /.vs
+/CppProperties.json
