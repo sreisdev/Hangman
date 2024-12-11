@@ -47,13 +47,15 @@ char inputCharacter() {
     bool inputIsCharacter = true;
     char result;
     do {
-        
         cout << "Buchstaben eingeben: ";
         cin >> result;
         if (isalpha(result) == 0) {
             cout << "Bitte einen Buchstaben aus dem Alphabet eingeben.";
             inputIsCharacter = false;
-        }      
+        }
+        else {
+            inputIsCharacter = true;
+        }
     } while (!inputIsCharacter);
     return result;
 }
