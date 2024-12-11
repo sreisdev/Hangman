@@ -2,13 +2,13 @@
 #include <vector>
 #include <sstream>
 #include <fstream>
-#include <cstdlib.h>
+#include <cstdlib>
 
 
 using namespace std;
 //Gets a random word from the wordlist.txt file
 vector<char> getRandomword(){
- return "party";
+    return {'p', 'a', 'r', 't', 'y'};
 }
 
 // Guess a character in words return true if guess was right and false if guess was wrong
@@ -23,7 +23,7 @@ bool checkCompleted(vector<char> tried, vector<char> word){
 // Print the state of the game, aka the hangman, the current tried vector and which chars been guessed
 void printGame(vector<char> tried, int attempts, vector<char> guessed){
     //clear screen, print vector tried, print hangman, print guessed chars
-    system(“cls“);
+    system("cls");
     cout << "TEST!";
 }
 // check if the char has been guessed already
