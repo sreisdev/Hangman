@@ -1,5 +1,77 @@
-﻿################################################################################
-# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
-################################################################################
+﻿# Kompilowane pliki binarne
+*.exe
+*.out
+*.app
 
-/.vs
+# Pliki obiektowe
+*.o
+*.obj
+*.lo
+*.dll
+*.so
+*.dylib
+
+# Pliki generowane przez kompilator
+*.gch
+*.pch
+
+# Pliki debugowania i logów
+*.log
+*.dbg
+*.stackdump
+*.suo
+*.pdb
+
+# Pliki Makefile wygenerowane przez narzędzia
+Makefile
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Katalog build (jeśli projekt korzysta z niego do budowania)
+build/
+Build/
+bin/
+debug/
+release/
+
+# Pliki IDE i edytorów
+# Visual Studio
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.ipch
+*.opensdf
+*.tlog
+
+# CLion/JetBrains IDE
+.idea/
+*.iml
+cmake-build-debug/
+cmake-build-release/
+
+# VSCode
+.vscode/
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj
+*.xcuserdata
+
+# Pliki tymczasowe
+*.tmp
+*.temp
+*.swp
+*.swo
+*.~*
+
+# Pliki zależności
+*.d
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+desktop.ini
