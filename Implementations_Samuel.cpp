@@ -48,7 +48,7 @@ char inputCharacter() {
     char result;
     do {
         
-        cout << "Buchstaben eingebn: ";
+        cout << "Buchstaben eingeben: ";
         cin >> result;
         if (isalpha(result) == 0) {
             cout << "Bitte einen Buchstaben aus dem Alphabet eingeben.";
