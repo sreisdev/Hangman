@@ -34,7 +34,6 @@ int main()
             }
             in=inputCharacter();
             if(!checkedGuessed(in, guessed)){
-                //Do rest
         
                if(!guessChar(in, tried, word)){
                    attempts++;
