@@ -24,12 +24,12 @@ bool checkCompleted(vector<char> tried, vector<char> word) {
     bool result = true;
     int index=0;
     for (char c : tried) {
-        if (!c == word.at(index)) {
+        if (c != word.at(index)) {
             result = false;
         }
-    }
         index++;
-        return result;
+    }
+    return result;
 }
 
 // check if the char has been guessed already
